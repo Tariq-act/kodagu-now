@@ -54,7 +54,7 @@ const Profile = () => {
           </div>
         </div>
         <div className=' border-l border-b '>
-          <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
+          <div className='flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
             <MdOutlinePlaylistAddCheck
               size={30}
               className='text-[#C3CAD9] group-hover:text-blue-600'
@@ -65,7 +65,7 @@ const Profile = () => {
           </div>
         </div>
         <div className=' border-r border-b border-t '>
-          <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group '>
+          <div className='flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group '>
             <MdOutlinePlaylistAddCheck
               size={30}
               className='text-[#C3CAD9] group-hover:text-blue-600'
@@ -75,8 +75,8 @@ const Profile = () => {
             </p>
           </div>
         </div>
-        <div className=' border-l border-b border-t '>
-          <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
+        <div className='border-l border-b border-t '>
+          <div className='flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
             <AiFillCloud
               size={30}
               className='text-[#C3CAD9] group-hover:text-blue-600'
@@ -86,8 +86,8 @@ const Profile = () => {
             </p>
           </div>
         </div>
-        <div className=' border-r border-b border-t '>
-          <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
+        <div className='border-r border-b border-t '>
+          <div className='flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
             <MdEmail
               size={30}
               className='text-[#C3CAD9] group-hover:text-blue-600'
@@ -97,8 +97,8 @@ const Profile = () => {
             </p>
           </div>
         </div>
-        <div className=' border- border-b border-t '>
-          <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
+        <div className='border- border-b border-t '>
+          <div className='flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
             <MdPeople
               size={30}
               className='text-[#C3CAD9] group-hover:text-blue-600'
@@ -108,8 +108,8 @@ const Profile = () => {
             </p>
           </div>
         </div>
-        <div className=' border-r border-b border-t '>
-          <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
+        <div className='border-r border-b border-t '>
+          <div className='flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
             <IoMdCalendar
               size={30}
               className='text-[#C3CAD9] group-hover:text-blue-600'
@@ -119,7 +119,7 @@ const Profile = () => {
             </p>
           </div>
         </div>
-        <div className=' border-l border-b border-t'>
+        <div className='border-l border-b border-t'>
           <div className=' w-full h-full p-4 transition-transform duration-200 hover:scale-110 hover:bg-white hover:rounded-xl hover:shadow-sm group'>
             <AiFillTool
               size={30}
@@ -129,6 +129,44 @@ const Profile = () => {
               Settings
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className='flex gap-2 items-center justify-center border-2 mt-3 rounded-full px-3 py-2'>
+        <div className='cursor-pointer'>
+          <Image
+            src={'/assets/local_phone.svg'}
+            alt=''
+            width={30}
+            height={30}
+          />
+        </div>
+        <div className='cursor-pointer'>
+          <Image src={'/assets/mail.svg'} alt='' width={30} height={30} />
+        </div>
+        <div className='cursor-pointer'>
+          <Image
+            src={'/assets/chrome_reader_mode.svg'}
+            alt=''
+            width={30}
+            height={30}
+          />
+        </div>
+        <div className='cursor-pointer'>
+          <Image
+            src={'/assets/ic_telegram.svg'}
+            alt=''
+            width={30}
+            height={30}
+          />
+        </div>
+        <div className='cursor-pointer'>
+          <Image
+            src={'/assets/ic_whatsapp.svg'}
+            alt=''
+            width={30}
+            height={30}
+          />
         </div>
       </div>
     </div>

@@ -6,10 +6,11 @@ import { HiBars3 } from 'react-icons/hi2';
 import { HiOutlineArrowTrendingUp } from 'react-icons/hi2';
 import { IoIosSearch } from 'react-icons/io';
 import AddTask from './AddTask';
+import TaskItem from './TaskItem';
 
 const TaskBoard = () => {
   return (
-    <div className='md:ml-10 border-2 w-full rounded-2xl overflow-x-auto'>
+    <div className='md:ml-10 border-2 w-full rounded-2xl overflow-scroll'>
       {/* Top */}
       <div className='w-full flex flex-shrink-0 items-center justify-around gap-9 py-5 px-3'>
         <ul className='flex  items-end justify-around gap-4 w-full text-xs font-bold text-[#7D8FB3]'>
@@ -61,12 +62,44 @@ const TaskBoard = () => {
         </div>
       </div>
 
-      <div className='flex justify-between gap-8 px-4 md:px-9'>
-        <div className='w-full flex justify-between gap-8'>
-          <AddTask color={'#8833FF'} title={'To do'} />
-          <AddTask color={'#33BFFF'} title={'In Work'} />
-          <AddTask color={'#FFCB33'} title={'Review'} />
-          <AddTask color={'#29CC39'} title={'Done'} />
+      <div className='px-4 md:px-9'>
+        <div className='w-full flex items-start justify-between gap-8'>
+          <div className='w-full'>
+            <AddTask color={'#8833FF'} title={'To do'} />
+            <div className='flex flex-col gap-3 mt-3'>
+              <TaskItem image={'/assets/taskImg-1.png'} />
+              <TaskItem />
+              <TaskItem />
+              <TaskItem />
+            </div>
+          </div>
+          <div className='w-full'>
+            <AddTask color={'#33BFFF'} title={'In Work'} />
+            <div className='flex flex-col gap-3 mt-3'>
+              <TaskItem />
+              <TaskItem image={'/assets/taskImg-2.png'} />
+              <TaskItem />
+              <TaskItem />
+            </div>
+          </div>
+          <div className='w-full'>
+            <AddTask color={'#FFCB33'} title={'Review'} />
+            <div className='flex flex-col gap-3 mt-3'>
+              <TaskItem />
+              <TaskItem />
+              <TaskItem />
+              <TaskItem />
+            </div>
+          </div>
+          <div className='w-full'>
+            <AddTask color={'#29CC39'} title={'Done'} />
+            <div className='flex flex-col gap-3 mt-3'>
+              <TaskItem />
+              <TaskItem />
+              <TaskItem />
+              <TaskItem />
+            </div>
+          </div>
         </div>
       </div>
     </div>
